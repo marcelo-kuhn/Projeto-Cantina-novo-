@@ -44,6 +44,46 @@ body {background-color: rgb(254, 252, 252)16;}
 <main>
 <h1 id="sugestoes">Sugestões</h1>
 
+
+
+
+<div class="form teste 2"></div>
+<form>
+
+<input type="text" id="nome" placeholder="Digite Aqui">
+
+<input type="password" id="senha" placeholder="Digite sua senha">
+
+<input type="email" id="email" placeholder="Digite seu email">
+
+<button type="button" onclick="validarCadastro()">cadastrar</button>
+
+</form>
+
+<script>
+function validarCadastro() {
+
+var nome = document.getElementById("nome").value;
+var email = document.getElementById("email").value;
+var senha = document.getElementById("senha").value;
+
+if (nome == "" || email == "" || senha == "") {
+alert("Preencha todos os campos!");
+}
+else if (
+nome == "Marcelo" &&
+email == "marcelo@gmail.com" &&
+senha == "marcelo01"
+) {
+alert("Acesso garantido com sucesso!");
+window.location.href = "projeto.html";
+}
+else {
+alert("Nome, email ou senha incorretos!");
+}
+}
+</script>
+
     
 <section class="items" style="border-radius: 10px;">
 
